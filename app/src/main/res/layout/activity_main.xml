@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arik.a408scorekeeper.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/Team1"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="@string/team1Score"
+        android:layout_alignBaseline="@+id/team1"
+        android:layout_alignBottom="@+id/team1"
+        android:layout_toRightOf="@+id/team1"
+        android:layout_toEndOf="@+id/team1"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <Button
+        android:id="@+id/team1two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/team1"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/score1"
+        android:layout_toStartOf="@+id/score1"
+        android:text="2"
+        android:onClick="team1two"/>
+
+    <Button
+        android:id="@+id/team1three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:onClick="team1three"
+        android:layout_alignBaseline="@+id/team1two"
+        android:layout_alignBottom="@+id/team1two"
+        android:layout_toRightOf="@+id/team1two"
+        android:layout_toEndOf="@+id/team1two" />
+
+    <ProgressBar
+        android:id="@+id/team1Progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/team1two"
+        android:layout_alignStart="@+id/team1two"
+        android:layout_below="@+id/team1two"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/team1three"
+        android:layout_alignEnd="@+id/team1three"
+        android:max ="21"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/Team2"
+        android:textSize="36sp"
+        android:layout_below="@+id/team1Progress"
+        android:layout_toLeftOf="@+id/team1three"
+        android:layout_toStartOf="@+id/team1three" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="@string/team2Score"
+        android:layout_alignBaseline="@+id/team2"
+        android:layout_alignBottom="@+id/team2"
+        android:layout_toRightOf="@+id/team2"
+        android:layout_toEndOf="@+id/team2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <Button
+        android:id="@+id/team2two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/team2"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/score2"
+        android:layout_toStartOf="@+id/score2"
+        android:text="2"
+        android:onClick="team2two"/>
+
+    <Button
+        android:id="@+id/team2three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:onClick="team2three"
+        android:layout_alignBaseline="@+id/team2two"
+        android:layout_alignBottom="@+id/team2two"
+        android:layout_toRightOf="@+id/team2two"
+        android:layout_toEndOf="@+id/team2two" />
+
+    <ProgressBar
+        android:id="@+id/team2Progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/team2two"
+        android:layout_alignStart="@+id/team2two"
+        android:layout_below="@+id/team2two"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/team2three"
+        android:layout_alignEnd="@+id/team2three"
+        android:max ="21"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="62dp"
+        android:text="Team Creator"
+        android:onClick="teamCreator"
+        android:layout_alignLeft="@+id/team2Progress"
+        android:layout_alignStart="@+id/team2Progress"
+        android:layout_alignRight="@+id/team2Progress"
+        android:layout_alignEnd="@+id/team2Progress" />
+
+
+</RelativeLayout>
